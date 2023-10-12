@@ -9,10 +9,62 @@
   </head>
   <body>
     <!-- Flex and alignment -->
+    <div class="m-8 flex h-72 items-center justify-around bg-slate-300">
+      <div class="border border-blue-500 bg-blue-100 p-10">01</div>
+      <div class="border border-blue-500 bg-blue-100 p-10">02</div>
+      <div class="self-start border border-blue-500 bg-blue-100 p-10">03</div>
+      <div class="self-end border border-blue-500 bg-blue-100 p-10">04</div>
+    </div>
+    <hr />
 
     <!-- Flex Column, Gap and Order -->
+    <div class="m-8 flex w-96 flex-col items-center gap-8 bg-amber-300">
+      <div
+        class="order-3 border border-emerald-500 bg-emerald-100 p-10 text-center"
+      >
+        01
+      </div>
+      <div
+        class="order-2 border border-emerald-500 bg-emerald-100 p-10 text-center"
+      >
+        02
+      </div>
+      <div
+        class="order-4 border border-emerald-500 bg-emerald-100 p-10 text-center"
+      >
+        03
+      </div>
+      <div
+        class="order-1 border border-emerald-500 bg-emerald-100 p-10 text-center"
+      >
+        04
+      </div>
+    </div>
+    <hr />
 
     <!-- Grow and shrink -->
+    <div class="m-8 flex w-full bg-pink-100">
+      <!-- flex-none: Prevent item from growing or shrinking -->
+      <div class="w-60 flex-none border border-indigo-300 bg-indigo-100 p-10">
+        flex-none
+      </div>
+      <!-- flex-initial:  Allow item to shrink but not grow, taking into account its initial size  -->
+      <div class="flex-initial border border-indigo-300 bg-pink-100 p-10">
+        flex-initial
+      </div>
+      <!-- flex-auto: Allow item to grow and shrink, taking into account its initial size -->
+      <div class="flex-auto border border-indigo-300 bg-green-100 p-10">
+        flex-auto
+      </div>
+      <!-- flex-1: Allow item to grow and shrink as needed, ignoring its initial size -->
+      <div class="flex-1 border border-indigo-300 bg-amber-100 p-10">
+        flex-1
+      </div>
+      <div class="border border-indigo-300 bg-indigo-100 p-10">05</div>
+      <div class="border border-indigo-300 bg-indigo-100 p-10">06</div>
+      <div class="border border-indigo-300 bg-indigo-100 p-10">07</div>
+    </div>
+    <hr />
   </body>
 </html>
 
