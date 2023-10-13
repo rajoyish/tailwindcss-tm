@@ -9,8 +9,44 @@
   </head>
   <body>
     <!-- Grid cols and rows -->
+    <section class="grid grid-cols-3 grid-rows-4 gap-4 bg-gray-100 p-8">
+      <div class="border border-blue-500 bg-blue-200 p-10">01</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">02</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">03</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">04</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">05</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">06</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">07</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">08</div>
+      <div class="border border-blue-500 bg-blue-200 p-10">09</div>
+    </section>
 
     <!-- Col and row span -->
+    <section class="bg-amber-100 md:grid md:grid-cols-3 md:gap-4 p-8">
+      <div
+        class="border border-emerald-500 bg-emerald-100 p-10 text-center md:col-span-2"
+      >
+        Resize, It's responsive
+      </div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10">02</div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10">03</div>
+      <div
+        class="border border-emerald-500 bg-emerald-100 p-10 md:col-span-2 md:row-span-2"
+      >
+        04
+      </div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10 md:row-span-3">
+        05
+      </div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10">06</div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10">07</div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10 md:col-span-2">
+        08
+      </div>
+      <div class="border border-emerald-500 bg-emerald-100 p-10 md:col-span-3">
+        09
+      </div>
+    </section>
   </body>
 </html>
 
