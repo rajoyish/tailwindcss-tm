@@ -6,25 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Customization</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "550px",
+            md: "800px",
+            lg: "1200px",
+            xl: "1440px",
+          },
+          fontFamily: {
+            sans: ["Austein", "sans-serif"],
+            serif: ["Abhaya Libre", "serif"],
+          },
+          extend: {
+            colors: {
+              primary: "#c3d2b6",
+              accent: "#6a4f82",
+            },
+
+            spacing: {
+              5: "3.5rem",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
   </head>
   <body
-    class="bg-black sm:bg-green-800 md:bg-primary lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+    class="bg-accent min-h-screen p-16 text-center sm:bg-green-500 md:bg-fuchsia-500 lg:bg-cyan-500 xl:bg-amber-500 2xl:bg-indigo-500"
   >
-    <h1 class="text-white text-xl md:text-3xl xl:text-5xl">
-      Tailwind is awesome
-    </h1>
+    <h1 class="text-primary mb-4 text-3xl md:text-5xl">Tailwind is awesome</h1>
+    <p class="font-serif text-white">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio incidunt
+      veritatis sunt sequi cumque! Necessitatibus aperiam reprehenderit sequi,
+      et quae maiores aut vitae nisi dicta, sit deleniti, fugiat quas
+      perspiciatis.
+    </p>
+    <h1 class="mt-5 text-2xl text-white">Custom spacing: 3.5rem</h1>
 
     <script>
       function showBrowserWidth() {
         const width =
           window.innerWidth ||
           document.documentElement.clientWidth ||
-          document.body.clientWidth
+          document.body.clientWidth;
 
-        document.querySelector('h1').innerHTML = `Width: ${width}`
+        document.querySelector("h1").innerHTML = `Width: ${width}`;
       }
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
+      window.onload = showBrowserWidth;
+      window.onresize = showBrowserWidth;
     </script>
   </body>
 </html>
