@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Modal</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex min-h-screen items-center justify-center bg-rose-50">
+      <!-- Card Container -->
+      <div
+        class="relative m-6 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0"
+      >
+        <!-- Left Side -->
+        <div class="p-6 md:p-20">
+          <!-- Top Content -->
+          <h2 class="mb-5 font-mono text-4xl font-bold">Log In</h2>
+          <p class="mb-12 max-w-sm font-sans font-light text-gray-600">
+            Log in to your account to upload or download pictures, videos, or
+            music.
+          </p>
+          <input
+            class="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light"
+            type="text"
+            placeholder="Enter your email address"
+          />
+
+          <!-- Middle Content -->
+          <div
+            class="mt-6 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0"
+          >
+            <div class="font-thint text-sky-700">Forgot password</div>
+            <button
+              class="flex w-full items-center justify-center space-x-4 rounded-md border bg-sky-700 p-6 px-9 font-sans font-bold text-white shadow-sm shadow-cyan-100 transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-90 hover:shadow-lg md:w-auto"
+            >
+              <span>Next</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- Border -->
+          <div class="mt-12 border-b border-b-gray-300"></div>
+
+          <!-- Bottom Content -->
+          <p class="py-6 text-center text-sm font-thin text-gray-400">
+            or log in with
+          </p>
+
+          <!-- Bottom Buttons Container -->
+          <div
+            class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0"
+          >
+            <button
+              class="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2"
+            >
+              <img
+                class="w-9"
+                src="https://i.postimg.cc/sDkSz9hS/facebook.png"
+              />
+              <span>Facebook</span>
+            </button>
+            <button
+              class="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2"
+            >
+              <img class="w-9" src="https://i.postimg.cc/Qx95vnHh/google.png" />
+              <span>Google</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <img
+          src="https://i.postimg.cc/BvsKLSNn/image.jpg"
+          class="hidden w-[430px] md:block"
+        />
+
+        <!-- Close Button -->
+        <div
+          class="trasition group absolute -top-5 right-4 grid h-10 w-10 cursor-pointer place-items-center rounded-full bg-gray-200 duration-150 hover:-translate-y-0.5 md:top-4 md:bg-white"
+        >
+          <span
+            class="material-symbols-outlined text-black group-hover:text-gray-600"
+            >close</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
