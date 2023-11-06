@@ -1,4 +1,4 @@
-# Loop Studios
+# Tailwind CSS & Vite UIs
 
 Brief project description.
 
